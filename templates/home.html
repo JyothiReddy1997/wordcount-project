@@ -1,0 +1,28 @@
+
+
+
+<html>
+
+<style>
+#grad1 {
+  height: 100%;
+  background-image: linear-gradient(LightBlue,SeaShell);
+}
+</style>
+<body>
+
+  <div id="grad1">
+<center><br><h1>WORD COUNT</h1>
+
+<a href="{% url 'about'%}"> ABOUT </a>
+      <form action="{% url 'count'%}">
+
+        <br>
+          <textarea cols="100" rows="30" name="fulltext"> </textarea>
+          <br><br>
+          <input type="submit" name="" value="Count ! "/>
+
+      </form>  </center>
+</div>
+</body>
+</html>

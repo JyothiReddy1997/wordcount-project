@@ -1,0 +1,24 @@
+<style>
+#grad1 {
+  height: 100%;
+  background-image: linear-gradient(PaleGreen, snow);
+}
+</style>
+
+<body>
+<div id="grad1">
+<br><br>
+<center>
+  <h1> There are  {{count}} word/s in your text </h1>
+  {{fulltext }}
+
+  <h2> word count:</h2>
+  {% for word,counttotal in sortedwords %}
+  {{word }}- {{counttotal}}
+  <br>
+  {%endfor%}
+  <br><br>
+  <a href="{% url 'home'%}"> Start Again </a>
+</center>
+</div>
+</body>
